@@ -3,10 +3,11 @@ from bs4 import BeautifulSoup as bs
 import re
 import pandas as pd
 
-page = urllib.request.urlopen('https://wseiz.pl/uczelnia/wydzial-inzynierii-i-zarzadzania/informatyka-i-stopnia/')
+page = urllib.request.urlopen('https://peps.python.org/pep-0008/')
 soup = bs(page)
 
+
 headings = soup.body.findAll('a')
-headings_names = re.findall('class="toc-backref" href="\w+', str(headings))
+headings_names = re.findall('href="([^"]+)"', str(headings))
 
 print(headings_names)
