@@ -39,4 +39,5 @@ Note that you can use the len fuction to check if data extracted matches.
 The last step is placing all the extracted data into a data frame for easy viewing. This is achieved through using the panda python library and manipulation of dictionaries.
 
 Author: Opoti Alvin Waswa
+
 Email: alvinopotiwaswa@gmail.com
